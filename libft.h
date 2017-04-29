@@ -6,7 +6,7 @@
 /*   By: blee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 13:16:07 by blee              #+#    #+#             */
-/*   Updated: 2017/04/27 18:51:02 by blee             ###   ########.fr       */
+/*   Updated: 2017/04/29 14:16:52 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,6 @@ int					*ft_sort_int(int *tab, size_t size);
 int					ft_numlen(int num);
 t_list				*ft_strsplit_lst(char *str, char c);
 int					ft_isprime(int num);
-void				ft_lstdel_node(t_list **lst, t_lst *node);
+void				ft_lstdelnode(t_list **lst, t_lst *node);
 
 #endif
