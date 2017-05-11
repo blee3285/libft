@@ -6,7 +6,7 @@
 /*   By: blee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 14:10:39 by blee              #+#    #+#             */
-/*   Updated: 2017/03/20 19:24:46 by blee             ###   ########.fr       */
+/*   Updated: 2017/05/10 17:37:07 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char		*ft_itoa(int n)
 	if (n == -2147483648)
 		return (num_too_big());
 	neg = -n;
-	len = ft_numlen(n);
+	len = ft_numlen(n, 10);
 	if (n < 0)
 		n = -n;
 	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))

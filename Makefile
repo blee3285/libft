@@ -6,7 +6,7 @@
 #    By: blee <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/20 18:11:45 by blee              #+#    #+#              #
-#    Updated: 2017/04/29 14:27:25 by blee             ###   ########.fr        #
+#    Updated: 2017/05/10 17:17:46 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,8 @@ SRC = ft_atoi.c \
 	  ft_numlen.c \
 	  ft_strsplit_lst.c \
 	  ft_isprime.c \
-	  ft_lstdelnode.c
+	  ft_lstdelnode.c \
+	  ft_itoa_base.c
 
 OBJ = $(SRC:.c=.o)
 
