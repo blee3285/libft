@@ -6,7 +6,7 @@
 #    By: blee <blee@student.42.us.org>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/23 17:57:29 by blee              #+#    #+#              #
-#    Updated: 2017/08/23 19:39:39 by blee             ###   ########.fr        #
+#    Updated: 2017/08/28 17:17:24 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,13 +97,14 @@ LIBFT +=	ft_tolower.c \
 			ft_toupper.c \
 			ft_swap.c
 
-SRC_FILES = $(addprefix srcs/libft/, $(LIBFT))
+SRC_FILES = $(addprefix libft/, $(LIBFT))
+
 
 # get_next_line
 
 GNL =		get_next_line.c
 
-SRC_FILES += $(addprefix srcs/gnl/, $(GNL))
+SRC_FILES += $(addprefix gnl/, $(GNL))
 
 # ft_printf
 
@@ -123,4 +124,5 @@ PRINTF =	build_str.c \
 			wstr.c \
 			wstr2.c
 
-SRC_FILES += $(addprefix srcs/ft_printf/, $(PRINTF))
+SRC_FILES += $(addprefix ft_printf/, $(PRINTF))
+C_FILES = $(LIBFT) $(GNL) $(PRINTF)
