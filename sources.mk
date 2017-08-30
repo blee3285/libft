@@ -6,7 +6,7 @@
 #    By: blee <blee@student.42.us.org>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/23 17:57:29 by blee              #+#    #+#              #
-#    Updated: 2017/08/28 17:17:24 by blee             ###   ########.fr        #
+#    Updated: 2017/08/29 18:53:26 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -126,3 +126,4 @@ PRINTF =	build_str.c \
 
 SRC_FILES += $(addprefix ft_printf/, $(PRINTF))
 C_FILES = $(LIBFT) $(GNL) $(PRINTF)
+SUB_DIR = libft gnl ft_printf
