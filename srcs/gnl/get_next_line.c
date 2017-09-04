@@ -6,11 +6,11 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 15:43:37 by blee              #+#    #+#             */
-/*   Updated: 2017/05/07 18:29:28 by blee             ###   ########.fr       */
+/*   Updated: 2017/09/01 17:38:23 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 int		add_buffer(char **hold, char *str)
 {

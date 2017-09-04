@@ -6,13 +6,13 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/10 17:06:49 by blee              #+#    #+#             */
-/*   Updated: 2017/07/25 17:07:43 by blee             ###   ########.fr       */
+/*   Updated: 2017/09/01 17:37:25 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*build_str(long long value, int base, int len, int cap)
+static char	*build_str_s(long long value, int base, int len, int cap)
 {
 	char	*num;
 	char	*str;
@@ -53,7 +53,7 @@ char		*ft_itoa_base(long long value, int base, int cap)
 	len = ft_numlen(num, base);
 	if (num < 0)
 		num *= -1;
-	str = build_str(num, base, len, cap);
+	str = build_str_s(num, base, len, cap);
 	return (str);
 }
 
