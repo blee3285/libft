@@ -6,7 +6,7 @@
 /*   By: blee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 13:16:07 by blee              #+#    #+#             */
-/*   Updated: 2017/08/29 19:31:19 by blee             ###   ########.fr       */
+/*   Updated: 2017/09/24 14:57:26 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
+# include "btree.h"
 
 typedef struct		s_list
 {

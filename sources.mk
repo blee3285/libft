@@ -6,7 +6,7 @@
 #    By: blee <blee@student.42.us.org>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/23 17:57:29 by blee              #+#    #+#              #
-#    Updated: 2017/08/29 18:53:26 by blee             ###   ########.fr        #
+#    Updated: 2017/09/24 15:02:50 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -125,5 +125,16 @@ PRINTF =	build_str.c \
 			wstr2.c
 
 SRC_FILES += $(addprefix ft_printf/, $(PRINTF))
-C_FILES = $(LIBFT) $(GNL) $(PRINTF)
-SUB_DIR = libft gnl ft_printf
+
+# btree
+
+BTREE =		ft_btadd.c \
+			ft_btnew.c \
+			ft_btinfix.c \
+			ft_btprefix.c \
+			ft_btsuffix.c
+
+SRC_FILES += $(addprefix btree/, $(BTREE))
+
+C_FILES = $(LIBFT) $(GNL) $(PRINTF) $(BTREE)
+SUB_DIR = libft gnl ft_printf btree

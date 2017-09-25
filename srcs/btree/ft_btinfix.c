@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_btnew.c                                         :+:      :+:    :+:   */
+/*   ft_btinfix.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/22 16:31:34 by blee              #+#    #+#             */
-/*   Updated: 2017/09/24 15:18:31 by blee             ###   ########.fr       */
+/*   Created: 2017/09/24 12:54:10 by blee              #+#    #+#             */
+/*   Updated: 2017/09/24 12:57:56 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-b_tree		*ft_btnew(void *data, size_t size)
+void	ft_btinfix(b_tree *root, void (*func)(b_tree*))
 {
-	b_tree		*new;
-
-	new = (b_tree*)malloc(sizeof(b_tree));
-	if (!new)
-		return (NULL);
-	if (!data)
+	if (root)
 	{
-		new->data = NULL;
-		new->content_size = 0;
+		ft_btinfix(root->left, func);
+		func(root);
+		ft_btinfix(root->right, func);
 	}
-	else
-	{
-		new->content_size = size;
-		new->data = malloc(size);
-		if (!(new->data))
-		{
-			free(new);
-			return (NULL);
-		}
-		ft_memcpy(new->data, data, size);
-	}
-	new->left = NULL;
-	new->right = NULL;
-	return (new);
 }
