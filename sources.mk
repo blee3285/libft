@@ -6,7 +6,7 @@
 #    By: blee <blee@student.42.us.org>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/23 17:57:29 by blee              #+#    #+#              #
-#    Updated: 2017/09/24 15:02:50 by blee             ###   ########.fr        #
+#    Updated: 2017/09/27 12:41:41 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -132,7 +132,8 @@ BTREE =		ft_btadd.c \
 			ft_btnew.c \
 			ft_btinfix.c \
 			ft_btprefix.c \
-			ft_btsuffix.c
+			ft_btsuffix.c \
+			ft_btdel.c
 
 SRC_FILES += $(addprefix btree/, $(BTREE))
 
