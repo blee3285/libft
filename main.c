@@ -6,7 +6,7 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 15:20:17 by blee              #+#    #+#             */
-/*   Updated: 2017/09/27 12:50:45 by blee             ###   ########.fr       */
+/*   Updated: 2017/09/28 18:18:03 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ int	main(void)
 	temp = test->right;
 	ft_btinfix(test, bt_putnum);
 	ft_putchar('\n');
-	ft_btdel(&test);
-	ft_btinfix(temp, bt_putnum);
+	ft_btdel(&temp);
+	ft_btinfix(test, bt_putnum);
 	ft_putchar('\n');
 	return (0);
 }
