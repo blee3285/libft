@@ -6,7 +6,7 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 15:20:17 by blee              #+#    #+#             */
-/*   Updated: 2017/10/23 18:10:47 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 18:34:37 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ int	main(void)
 {
 	t_btree	*test;
 	t_btree	*temp;
-	int		x = 1;
+	int		x = 0;
 	int		y = 2;
 	int		z = 3;
 	int		a = 4;
 	int		b = 5;
-	int		array[] = {5,4,3,2,1};
+	char	**str_arr;
 /*
 	test = ft_btnew(&y, sizeof(y));
 	ft_btadd(&test, ft_btnew(&x, sizeof(x)), bt_cmp);
@@ -78,9 +78,18 @@ int	main(void)
 	ft_btinfix(test, bt_putnum);
 	ft_putchar('\n');
 */
-	print_arr(array, 5);
-	ft_putchar('\n');
-	//ft_quicksort(&array, 0, 4, &arr_cmp);
-	//print_arr(array, 5);
+	str_arr = (char **)malloc(sizeof(char **) * 5);
+	str_arr[0] = ft_strdup("zzz");
+	str_arr[1] = ft_strdup("bbb");
+	str_arr[2] = ft_strdup("aaa");
+	str_arr[3] = ft_strdup("ccc");
+	str_arr[4] = ft_strdup("abc");
+	ft_quicksort((void(**)) str_arr, 0, 4,
+			(int (*)(const void *, const void *))&ft_strcmp);
+	while (x < 5)
+	{
+		ft_putstr(str_arr[x]);
+		x++;
+	}
 	return (0);
 }
