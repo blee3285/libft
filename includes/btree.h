@@ -6,7 +6,7 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 16:21:11 by blee              #+#    #+#             */
-/*   Updated: 2017/09/27 12:42:19 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 16:41:12 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ typedef struct		s_tree
 	size_t			content_size;
 	struct s_tree	*left;
 	struct s_tree	*right;
-}					b_tree;
+}					t_btree;
 
-int					ft_btadd(b_tree **root, b_tree *new, 
-						int (*cmpf)(b_tree*, b_tree*));
-b_tree				*ft_btnew(void *data, size_t (size));
-void				ft_btinfix(b_tree *root, void (*func)(b_tree*));
-void				ft_btprefix(b_tree *root, void (*func)(b_tree*));
-void				ft_btsuffix(b_tree *root, void (*func)(b_tree*));
-void				ft_btdel(b_tree **tree);
+int					ft_btadd(t_btree **root, t_btree *new,
+					int (*cmpf)(t_btree*, t_btree*));
+t_btree				*ft_btnew(void *data, size_t (size));
+void				ft_btinfix(t_btree *root, void (*func)(t_btree*));
+void				ft_btprefix(t_btree *root, void (*func)(t_btree*));
+void				ft_btsuffix(t_btree *root, void (*func)(t_btree*));
+void				ft_btdel(t_btree **tree);
 
 #endif

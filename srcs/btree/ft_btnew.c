@@ -6,17 +6,17 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 16:31:34 by blee              #+#    #+#             */
-/*   Updated: 2017/09/24 15:18:31 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 16:36:10 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-b_tree		*ft_btnew(void *data, size_t size)
+t_btree		*ft_btnew(void *data, size_t size)
 {
-	b_tree		*new;
+	t_btree		*new;
 
-	new = (b_tree*)malloc(sizeof(b_tree));
+	new = (t_btree*)malloc(sizeof(t_btree));
 	if (!new)
 		return (NULL);
 	if (!data)

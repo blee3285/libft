@@ -6,7 +6,7 @@
 /*   By: blee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 13:16:07 by blee              #+#    #+#             */
-/*   Updated: 2017/10/12 19:22:42 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 16:11:07 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,7 @@ void				ft_lstdelnode(t_list **lst, t_list **node);
 char				*ft_itoa_base(long long value, int base, int cap);
 char				*ft_itoa_base_un(unsigned long long x, int base, int cap);
 int					*ft_intarray(int size);
+void				ft_quicksort(void **array, int low, int high,
+					int (*cmp)(const void *, const void *));
 
 #endif

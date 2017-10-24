@@ -6,15 +6,15 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/26 15:04:06 by blee              #+#    #+#             */
-/*   Updated: 2017/09/28 18:20:29 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 16:34:06 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_btdel(b_tree **tree)
+void	ft_btdel(t_btree **tree)
 {
-	b_tree	*root;
+	t_btree	*root;
 
 	root = *tree;
 	if (root)

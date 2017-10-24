@@ -6,13 +6,13 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 12:54:10 by blee              #+#    #+#             */
-/*   Updated: 2017/09/24 12:57:56 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/23 16:35:34 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_btinfix(b_tree *root, void (*func)(b_tree*))
+void	ft_btinfix(t_btree *root, void (*func)(t_btree*))
 {
 	if (root)
 	{

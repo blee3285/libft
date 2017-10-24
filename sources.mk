@@ -6,7 +6,7 @@
 #    By: blee <blee@student.42.us.org>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/23 17:57:29 by blee              #+#    #+#              #
-#    Updated: 2017/10/12 19:22:09 by blee             ###   ########.fr        #
+#    Updated: 2017/10/23 16:09:35 by blee             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -96,7 +96,8 @@ LIBFT +=	ft_strcat.c \
 LIBFT +=	ft_tolower.c \
 			ft_toupper.c \
 			ft_swap.c \
-			ft_intarray.c
+			ft_intarray.c \
+			ft_quicksort.c
 
 SRC_FILES = $(addprefix libft/, $(LIBFT))
 
