@@ -6,11 +6,11 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 16:21:11 by blee              #+#    #+#             */
-/*   Updated: 2017/10/23 16:41:12 by blee             ###   ########.fr       */
+/*   Updated: 2017/10/27 15:45:31 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	BTREE_H
+#ifndef BTREE_H
 # define BTREE_H
 
 typedef struct		s_tree
