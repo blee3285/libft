@@ -6,7 +6,7 @@
 /*   By: blee <blee@student.42.us.org>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/13 19:21:17 by blee              #+#    #+#             */
-/*   Updated: 2017/08/16 16:44:07 by blee             ###   ########.fr       */
+/*   Updated: 2017/11/01 18:06:07 by blee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,6 @@ int		print_string(int **formats, va_list ap)
 	ft_bzero(*formats, 40);
 	free(output);
 	return (len);
-}
-
-int		*ft_intarray(int size)
-{
-	int		*array;
-
-	array = (int *)malloc(sizeof(int) * size);
-	if (!array)
-		return (NULL);
-	ft_bzero(array, (size * 4));
-	return (array);
 }
 
 int		valid_format(char *str, int **formats, va_list ap)
